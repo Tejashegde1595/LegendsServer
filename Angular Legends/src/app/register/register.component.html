@@ -1,0 +1,31 @@
+<div class="Jumbotron">
+    <div class="container">
+      <h1>Register</h1>
+      <form  (ngSubmit)="Register(regForm.value)" #regForm="ngForm" >
+        <div class="form-group">
+          <label for="name">Username</label>
+          <input type="text" class="form-control" id="username" name="username" required ngModel>
+        </div>
+    
+        <div class="form-group">
+          <label for="alterEgo">Password</label>
+          <input type="password" class="form-control" id="password" name="password" required ngModel>
+        </div>
+        <div class="form-group">
+          <label for="name">FirstName</label>
+          <input type="text" class="form-control" id="firstname"  name="firstname" required ngModel> 
+        </div>
+    
+        <div class="form-group">
+          <label for="alterEgo">LastName</label>
+          <input type="text" class="form-control" id="lastname"  name="lastname" ngModel>
+        </div>
+        <p>{{response}}</p>
+        <button type="submit" class="btn btn-success" name="regForm" >Register</button> 
+     
+      </form>
+      <br>
+      <button type="button"  (click)="loginUser()"  class="btn btn-primary" >Login</button>
+    </div>
+    
+    </div>
